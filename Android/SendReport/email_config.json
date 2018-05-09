@@ -1,0 +1,12 @@
+{
+  "smtp_ssl": true,
+  "email_content": "批量发送",
+  "email_theme": "测试报告",
+  "receivers": [
+    "595282775@qq.com"
+  ],
+  "sender_server": "smtp.exmail.qq.com",
+  "sender_port": "465",
+  "sender_address": "",
+  "sender_password": ""
+}

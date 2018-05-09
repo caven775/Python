@@ -1,0 +1,37 @@
+{
+  "device_id": "",
+  "session_id": "",
+  "system_type": "andriod",
+  "version": "2.2.9",
+  "token": "",
+  "baseURL": "",
+  "URL": [
+    {
+      "parameters": {
+        "currentPage": "1",
+        "NEW_TYPE": ""
+      },
+      "description": "获取咨询列表信息",
+      "type": "GET_INDEX_NEW"
+    },
+    {
+      "parameters": {
+        "APP_MARKET_CODE": ""
+      },
+      "description": "获取开机启动广告",
+      "type": "GET_OPEN_ADV"
+    },
+    {
+      "parameters": {
+      },
+      "description": "TOKEN时效判断",
+      "type": "TOKEN_VALIDATE"
+    },
+    {
+      "parameters": {
+      },
+      "type": "GET_INDEX",
+      "description": "获取首页"
+    }
+  ]
+}
