@@ -78,6 +78,7 @@ class CaseTestReport(object):
 						self.write_data(real_column, item["actually_result"])
 					elif column == 6:
 						self.write_data(real_column, item["error_reason"])
+		self.workbook.close()
 
 
 
