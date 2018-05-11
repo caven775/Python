@@ -7,6 +7,6 @@
   ],
   "sender_server": "smtp.exmail.qq.com",
   "sender_port": "465",
-  "sender_address": "oooo",
+  "sender_address": "pppp",
   "sender_password": ""
 }
