@@ -25,7 +25,7 @@ class SendReportEmail(object):
 		#接收邮件
 		receivers = email["receivers"]
 
-		#创建一个带附件的实例
+		#创建一个带附件的实例、测试一下
 		message = MIMEMultipart()
 		message['From'] = Header(sender, 'utf-8')
 		message['To'] =  Header(";".join(receivers), 'utf-8')
