@@ -36,7 +36,7 @@ class APITestCase(object):
 		test_report.start_create_testReport()
 
 
-		#发送测试报告，传入报告所在的地址
+		#发送测试报告，传入报告所在的地址,看看
 		email = SendReportEmail()
 		report_path = os.getcwd() + "/report/api_test_report.xlsx"
 		email.send_email(report_path)
