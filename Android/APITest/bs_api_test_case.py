@@ -24,6 +24,7 @@ class APITestCase(object):
 
 	def test_all_apis(self):
 		json_file = self.get_api_json_file()
+		# assert  json_file
 		apis = json_file["URL"]
 		for item in apis:
 			param = self.get_parameters(json_file, item)
@@ -36,7 +37,7 @@ class APITestCase(object):
 		test_report.start_create_testReport()
 
 
-		#发送测试报告，传入报告所在的地址,看看
+		#发送测试报告，传入报告所在的地址
 		email = SendReportEmail()
 		report_path = os.getcwd() + "/report/api_test_report.xlsx"
 		email.send_email(report_path)

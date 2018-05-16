@@ -1,10 +1,10 @@
 {
-  "device_id": "",
+  "device_id": "222",
   "session_id": "",
   "system_type": "android",
   "version": "2.2.9",
   "token": "",
-  "baseURL": "",
+  "baseURL": "https://finsuitdev.udomedia.com.cn",
   "URL": [
     {
       "parameters": {
