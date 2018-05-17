@@ -22,8 +22,17 @@ class AssertTest(object):
     def assert_test_equal(self):
         file = self.readFile()
         url = file["baseURL"]
-        assert (url == "https://finsuitdev.udomedia.com.cn"), "url不正确， 请输入正确的url"
-        print(file)
+
+        try:
+            assert (url == "https://finsuitdev.udomedia.com.cn"), "url 不相等，执行AssertionError"
+        except AssertionError:
+            self.assert_test_empty()
+            print("断言生效，程序继续执行")
+
+
+
+
+
 
 
     #断言判断一个对象是否为空
@@ -45,7 +54,7 @@ class AssertTest(object):
 
 
 exerciseTest = AssertTest()
-# exerciseTest.assert_test_equal()
+exerciseTest.assert_test_equal()
 # exerciseTest.assert_test_empty()
-exerciseTest.assert_test_size()
+# exerciseTest.assert_test_size()
 
